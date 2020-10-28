@@ -1,0 +1,48 @@
+% Base de archivo LaTeX-article con paquetes necesarios cargados
+% Jorge Eiras 2014 CC 
+
+\documentclass[a4paper,12pt]{article} % Tamaño de papel, tamaño de letra y clase LaTeX usada. Otras clases: book, beamer...
+\usepackage[spanish]{babel}           % Permite escribir en Castellano (tildes y ñ) e implementa los contenidos en castellano.
+\usepackage[utf8]{inputenc}           % Codificación de caracteres. WINDOWS Y LINUX.
+%\usepackage[latin1]{inputenc}        % Codificacion de caracteres. MAC
+
+%ALGUNOS PAQUETES INTERESANTES. ESTOS PAQUETES (LIBRERÍAS) YA ESTÁN EN NUESTRO EQUIPO. DESDE AQUÍ LOS ESTAMOS LLAMANDO.
+\usepackage[T1]{fontenc} % Permite cambiar la fuente por defecto.
+\usepackage{graphicx}    % Permite implementar imágenes.
+\usepackage{color}       % Permite el uso de colores.
+\usepackage{anysize}     % Permite modificar el tamaño de los márgenes.
+\usepackage{multicol}    % Permite escribir a doble, triple...columna.
+\usepackage{bm}          % Permite letras griegas en negrita (uso: \bm{\alpha}).
+\usepackage{textcomp}    % Incluye símbolos específicos, pueden consultarse en la red.
+\usepackage{eurosym}     % Permite escribir el símbolo € mediante la orden \euro.
+\usepackage{amsthm}      % Paquete de la AMS para escribir teoremas.
+\usepackage{amsmath,amsfonts} %Paquetes específicos de símbolos creados por la sociedad americana de matemáticas.
+\usepackage{lineno}      % Permite numerar las líneas. Muy útil para borradores de trabajo en equipo.
+
+%ORDENES PARA PERSONALIZAR EL FORMATO DE TU DOCUMENTO
+\marginsize{1.5cm}{1cm}{1.5cm}{1.5cm} % MÁRGENES: Izq, Der, Sup, Inf.
+\parindent=0mm                        % Sangría por defecto. 
+\parskip=3mm                          % Espacio entre párrafos por defecto.
+\renewcommand{\baselinestretch}{1}    % Interlineado.
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{siunitx}
+ 
+
+%opening
+\title{Título del Artículo}
+\author{Tomás Fernández Bouvier}
+\date{\today} % Para que no aparezca deja el espacio entre {} vacío. Para que aparezca la fecha de hoy: \today
+
+
+\begin{document}   % Orden que marca el inicio del artículo.
+
+\maketitle         % Instrucción para generar el título del documento.
+
+%\tableofcontents  % Instrucción para generar el índice automáticamente.
+\section{Determinación del tiempo muerto}
+Durante las sucesivas mediciones, puede ocurrir que se produzcan dos reacciones tan cercanas una de la otra que sólo se detecte una de ellas. Lo que ocurre es que entre dos eventos siempre tiene que transcurrir un tiempo de relajación de forma que el detector recupere su situación de equilibrio y esté preparado para recibir otra señal. Ese tiempo entre reacciones se denomina tiempo muerto. En consecuencia, el número total de eventos que vamos a detectar va a ser menor que el real. El efecto del tiempo muerto se incrementa con el número de conteos. Es por ello que debemos evitar trabajar con fuentes muy activas. Sin embargo, incluso con tasas de conteo bajas se va a producir un error que debemos corregir. 
+
+
+
+\end{document} %Orden que finaliza el artículo, no puede haber nada escrito después de esta instrucción
